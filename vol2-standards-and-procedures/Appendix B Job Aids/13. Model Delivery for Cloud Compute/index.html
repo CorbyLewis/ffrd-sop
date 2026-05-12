@@ -1,0 +1,3101 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Searchable documentation for FFRD Standard Operating Procedures">
+      
+      
+      
+      
+        <link rel="prev" href="../12.%20Model%20Calibration/">
+      
+      
+        <link rel="next" href="../14.%20Cloud%20Compute%20Workflow/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Job Aid 13—Model Delivery for Cloud Compute - USACE FFRD SOP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#job-aid-13model-delivery-for-cloud-compute" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="USACE FFRD SOP" class="md-header__button md-logo" aria-label="USACE FFRD SOP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            USACE FFRD SOP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Job Aid 13—Model Delivery for Cloud Compute
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="USACE FFRD SOP" class="md-nav__button md-logo" aria-label="USACE FFRD SOP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    USACE FFRD SOP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol1 programatic context
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol1 programatic context
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vol1-programatic-context/programmatic-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programmatic context
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol2 standards and procedures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol2 standards and procedures
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../future-updates-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Future Standard Operating Procedure Updates List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-standards-and-procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical standards and procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B Job Aids
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendix B Job Aids
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01.%20Scoping%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 1—Scoping Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02.%20Data%20Preparation%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 2—Data Preparation Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03.%20Meteorologic%20Data%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 3—Meteorologic Data Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04.%20Observed%20Gage%20Data%20Preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 4—Observed Gage Data Preparation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05.%20Observed%20Gridded%20Data%20Preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 5—Observed Gridded Data Preparation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06.%20Standard%20Naming%20Conventions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 6—Standard Naming Conventions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07.%20Model%20Library%20Use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job AId 7—Model Library Use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08.%20Dam%20Physical%20Representation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 8—Dam Representation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09.%20Levee%20Physical%20Representation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 9—Levee Representation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.%20Dam%20System%20Response%20Development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 10—Dam System Response Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.%20Levee%20System%20Response%20Development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 11—Levee System Response Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.%20Model%20Calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job AId 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 13—Model Delivery for Cloud Compute
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 13—Model Delivery for Cloud Compute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#worflow-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worflow Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-model-linking-register-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Model Linking Register Delivery
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directory Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming-convention-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naming Convention Control
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-window-for-stochastic-storm-transposition-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Window for Stochastic Storm Transposition Events
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hydrologic-modeling-system-model-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hydrologic Modeling System Model Delivery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hydrologic Modeling System Model Delivery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basin-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basin Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basin Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subbasins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subbasins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reaches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reservoirs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reservoirs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meteorologic-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meteorologic Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Specifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulation-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simulation Runs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-precipitation-data-storm-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importing Precipitation Data (Storm Catalog)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Cleanup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Cleanup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basin-models_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basin Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meteorologic-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meteorologic Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-specifications_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Specifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-series-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time-Series Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paired-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paired Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulation-runs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simulation Runs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dss-files-in-the-project-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSS Files in the Project Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-files-in-the-project-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Files in the Project Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleaning-up-gis-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cleaning Up GIS Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#developing-continuous-initial-snow-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Developing Continuous Initial Snow States
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hec-hms-model-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HEC-HMS Model Delivery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HEC-HMS Model Delivery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antecedent-condition-template-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antecedent Condition Template Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hec-ressim-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HEC-ResSim Delivery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HEC-ResSim Delivery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-version_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-conformance-run-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create the Conformance Run Template
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the Conformance Run Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conformance-alternative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conformance Alternative
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformance-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conformance Simulation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#within-model-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Within Model Cleanup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Within Model Cleanup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-zipped-backup-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Zipped Backup Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-simulations-except-fema_ffrd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove All Simulations except “fema_ffrd”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-all-alternatives-except-fema_ffrd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete all Alternatives except fema_ffrd
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-unnecessary-outputs-in-fema_ffrd-alternative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove all Unnecessary Outputs in fema_ffrd alternative
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excess-rules-and-operation-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Excess Rules and Operation Sets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-unnecessary-map-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete Unnecessary Map Layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-model-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Model Cleanup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Model Cleanup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#map-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Map Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-directory-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared Directory Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networks-alternatives-simulations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Networks, Alternatives, Simulations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ressim-script-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ResSim Script Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ressim-model-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ResSim Model Delivery
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hec-ras-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HEC-RAS Delivery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HEC-RAS Delivery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-version_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plans-and-naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plans and Naming Conventions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plan-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plan File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Window
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warm-up-time-period" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warm-up Time Period
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-conditions-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initial Conditions Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restart Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breaches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equation-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equation Set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-solver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matrix Solver
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solver-cores-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solver Cores Setting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-control-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Control Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-output-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping Output Interval
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Geometry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flow-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flow File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flow File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#observed-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observed Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upstream-inflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upstream Inflows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meteorological-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meteorological Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hms-baseflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HMS Baseflows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downstream-water-surface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downstream Water Surface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dam-releases-from-ressim-or-hms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dam Releases from ResSim or HMS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ras-mapper-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RAS Mapper File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-hec-ras-delivery-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional HEC-RAS Delivery Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional HEC-RAS Delivery Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-plan-on-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Run Plan on Desktop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-dimensions-inflows-in-hdf-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Dimensions Inflows in HDF File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-dimensions-of-excess-precipitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Dimensions of Excess Precipitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-cells-affected-by-initial-conditions-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List Cells Affected by Initial Conditions Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delivery-of-cell-list-for-initial-conditions-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delivery of Cell List for Initial Conditions Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hec-ras-model-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HEC-RAS Model Delivery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#land-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Land Cover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-terrain-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping Terrain Delivery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping Terrain Delivery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-exported-terrain-for-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create Exported Terrain for Mapping
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breach-data-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breach Data Delivery
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14.%20Cloud%20Compute%20Workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15.%20Verification%20of%20Cloud%20Compute%20Event%20Results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16.%20Event%20Selection%20for%20Hydraulic%20Modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 16—Event Selection for Hydraulic Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17.%20Consequence%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 17—Consequence Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18.%20Performance%20Metric%20Evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol3 methodology decision rationale
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol3 methodology decision rationale
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vol3-methodology-decision-rationale/methodology-decision-rationale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology decision rationale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol4  cloud compute documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol4  cloud compute documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vol4%20-cloud-compute-documentation/cloud-compute-documenation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Volume Iv—Cloud Compute Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol5 supporting material
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol5 supporting material
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vol5-supporting-material/supporting-material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Volume 5 - Supporting Material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="job-aid-13model-delivery-for-cloud-compute">Job Aid 13—Model Delivery for Cloud Compute<a class="headerlink" href="#job-aid-13model-delivery-for-cloud-compute" title="Permanent link">&para;</a></h1>
+<h2 id="worflow-context">Worflow Context<a class="headerlink" href="#worflow-context" title="Permanent link">&para;</a></h2>
+<p>This job aid describes the specific requirements and steps for delivery of models for cloud compute of synthetic events during the Conformance Phase. The model integration lead is responsible for delivery and verification of quality control (QC) checks of all models to the cloud as well as the associated final Model Linking Register that includes all inputs required for successful development of cloud compute manifests and execution in the cloud.</p>
+<p>The model integration lead is also responsible for several steps that must occur in the desktop environment to validate accurate linking of all models and to confirm model performance (which are not described in this job aid). The pre-conformance review checklist must be completed with all items closed to ensure the linked system of models has been validated and all cloud-preparation steps have been completed.</p>
+<p>Figure 1. Models are delivered for cloud-compute during the Conformance Phase of the project, the third phase of the FFRD Workflow.</p>
+<p><img src="media/image1.png" style="width:3.2in;height:4.53098in" /></p>
+<p>Figure 2. Focus of this Job Aid in relation to steps within the Conformance Phase.</p>
+<p><img src="media/image2.png" style="width:6.5in;height:6.51528in" alt="Diagram AI-generated content may be incorrect." /></p>
+<h2 id="final-model-linking-register-delivery">Final Model Linking Register Delivery<a class="headerlink" href="#final-model-linking-register-delivery" title="Permanent link">&para;</a></h2>
+<p>A fully developed Name Table, Model Linking Register, Dam Scoping Table, and Levee Breach Locations are developed during the Scoping and Data Preparation Phase. These products provide the guide for model linking strategy throughout the FFRD project. They may be updated during the Calibration Phase or Conformance Phase of the project when unique issues are identified.</p>
+<p>The Model Linking Register is finalized early in the conformance phase when the full system of hydraulic models are linked in a desktop environment and tested. This Model Linking Register is an easily readable table that will contain all information required to build cloud-compute manifests described in detail in a separate job aid. These cloud-compute manifests control the actual linking of output data to input data that is summarized in the Model Linking Register with cloud-compute. Several cloud-compute manifests are required and include those for actions included in various plug-ins (i.e., hms-mutator-plugin, hms-runner, ressim-runner, fragility-curve-plugin, and ras-runner)</p>
+<p>Scripting to automate certain steps in the production of the compute-manifests has the potential to improve efficiency and ability to QC linking data.</p>
+<h2 id="directory-structure">Directory Structure<a class="headerlink" href="#directory-structure" title="Permanent link">&para;</a></h2>
+<p>The desktop version of the model, prior to upload to the cloud should include internal referencing to input files as shown in the schematic below. This structure mimics the directory structure of how the output data from individual events are stored in Model Library by cloud-compute, which allows for efficient viewing and replication of cloud results in later steps.</p>
+<p>Note that the terrain is stored at a higher-level directory where all models can share it.</p>
+<p>The location for upload of the models for cloud-compute is <em><u>not</u></em> shown in this figure. The actual model upload locations are described separate from this document (unique for each model).</p>
+<p>Figure 3. Model Library Output Data Directory Structure to be Mimicked on Desktop Prior to Model Upload. Not the Location for Model Upload for Cloud-Compute</p>
+<p><img src="media/image3.png" style="width:3.88493in;height:4.96813in" /></p>
+<h2 id="naming-convention-control">Naming Convention Control<a class="headerlink" href="#naming-convention-control" title="Permanent link">&para;</a></h2>
+<p>The FFRD SOP includes robust specific criteria for naming conventions that apply to model file names and internal model element names. These naming conventions are critical for the ability to control model linkages, perform various QC steps, and reliably access output data among other uses.</p>
+<p>The most critical moment in the FFRD process to ensure naming conventions follow the standards is at model upload for cloud compute.</p>
+<p>Although the SOP includes various review steps and checklists to address naming convention issues, there is opportunity for human error. Automated processes to check for adherence to naming conventions using scripts has the potential to reliably catch issues and ensure consistency across the FFRD program.</p>
+<h2 id="time-window-for-stochastic-storm-transposition-events">Time Window for Stochastic Storm Transposition Events<a class="headerlink" href="#time-window-for-stochastic-storm-transposition-events" title="Permanent link">&para;</a></h2>
+<p>The model integration lead will guide the event time window duration selection as described in the main SOP. It will be long enough to ensure rainfall in the upper basin has sufficient travel time to so that the downstream boundary of the model reaches a peak.</p>
+<p>A specific starting date and time will also be selected for use for the SST events and model preparation for cloud compute, but it will be varied for each event within cloud-compute.</p>
+<h2 id="hydrologic-modeling-system-model-delivery">Hydrologic Modeling System Model Delivery<a class="headerlink" href="#hydrologic-modeling-system-model-delivery" title="Permanent link">&para;</a></h2>
+<p>The following sections serve as a checklist for transforming a calibrated HEC-HMS project and preparing it for Conformance and Production simulations using cloud-compute.</p>
+<p>The synthetic event sampling of initial states and basin parameter sets is based on the HEC-HMS modeler or model integration lead delivering a large dataset .basin and .control files that represent possible combinations of conditions and parameter sets on each day throughout the period of record used for stochastic storm transposition (SST).</p>
+<h3 id="software-version">Software Version<a class="headerlink" href="#software-version" title="Permanent link">&para;</a></h3>
+<p>The HEC-HMS software version used for model development must be verified and consistent with the version called for in Section 6 of SOP Volume II.</p>
+<h3 id="first-steps">First Steps<a class="headerlink" href="#first-steps" title="Permanent link">&para;</a></h3>
+<p>First, use the <em>File</em>&gt;<em>Save As...</em> option within the HEC-HMS user interface to create a copy of the project. Use the <em>Copy DSS data (time-series, paired, grid data)</em> option to internalize any externally referenced HEC-DSS data as shown in the Figure 4. Note, this process does not copy external data like .asc or .tif files.</p>
+<p>Figure 4. HEC-HMS Save Current Project As Dialog</p>
+<p><img src="media/image4.png" style="width:6.5in;height:2.7747in" alt="HEC-HMS Save Current Project As Dialog with relevant options selected." /></p>
+<h3 id="model-settings">Model Settings<a class="headerlink" href="#model-settings" title="Permanent link">&para;</a></h3>
+<p>The following subsections describe modifications that must be made to HEC-HMS model files and project configurations to support stochastic simulations during the Conformance and Production phases.</p>
+<h4 id="basin-models">Basin Models<a class="headerlink" href="#basin-models" title="Permanent link">&para;</a></h4>
+<p>Several modifications must be made to the basin models, which were created during the historic event calibration phase. In general, initial conditions for all basin elements (e.g., subbasins, reaches, and reservoirs) must be specified in absolute, not relative terms. This enables efficient stochastic sampling and specification of their values.</p>
+<h5 id="subbasins">Subbasins<a class="headerlink" href="#subbasins" title="Permanent link">&para;</a></h5>
+<p>The Structured Discretization method must be used. The standard hydrologic grid (SHG) projection must be used along with an appropriate cell size (e.g., 2,000 meters), as shown in Figure 5.</p>
+<p>Figure 5. HEC-HMS Subbasin, Discretization Component Editor</p>
+<p><img src="media/image5.png" style="width:6.5in;height:2.53011in" alt="HEC-HMS Subbasin | Discretization Component Editor with appropriate selections." /></p>
+<p>The <em>Simple Canopy</em> method must be used. The <em>Depth Initial Storage Method</em> must be used. All other parameter selections/values achieved during model calibration should be left unchanged. Figure 6 shows an example of these options.</p>
+<p>Figure 6. HEC-HMS Subbasin, Canopy Component Editor</p>
+<p><img src="media/image6.png" style="width:6.5in;height:3.64394in" alt="HEC-HMS Subbasin | Canopy Component Editor with appropriate selections." /></p>
+<p>Note that the initial storage depth will be stochastically sampled and set during conformance and production simulations.</p>
+<p>If snow accumulation and melt processes are relevant to the watershed of interest, the <em>Gridded Temperature Index Snow</em> method must be used (otherwise, this process should be set to <em>None</em>). For each initial state variable, the <em>Parameter Grid</em> option must be used. All other parameter selections/values achieved during model calibration should be left unchanged. Figure 7 shows an example of these options.</p>
+<p>Figure 7. HEC-HMS Subbasin, Snow Component Editor</p>
+<p><img src="media/image7.png" style="width:4.22864in;height:6.75957in" alt="HEC-HMS Subbasin | Snow Component Editor with appropriate selections." /></p>
+<p>Note that the parameter grids for each state variable will be stochastically sampled and set during conformance and production simulations.</p>
+<p>If surface storage processes are relevant to the watershed of interest, the <em>Simple Surface</em> method must be used (otherwise, this process should be set to <em>None</em>). The <em>Depth Initial Storage Method</em> must be used. All other parameter selections/values achieved during model calibration should be left unchanged. Figure 8 shows an example of these options.</p>
+<p>Note that the initial storage depth will be stochastically sampled and set during conformance and production simulations.</p>
+<p>The <em>Deficit and Constant Loss</em> method must be used. All parameter selections/values achieved during model calibration should be left unchanged. Figure 9 shows an example of these options.</p>
+<p>Note that the initial deficit will be stochastically sampled and set during conformance and production simulations.</p>
+<p>The <em>ModClark Transform</em> method must be used. All parameter selections/values achieved during model calibration should be left unchanged. Figure 10 shows an example of these options.</p>
+<p>Figure 8. HEC-HMS Subbasin, Surface Component Editor</p>
+<p><img src="media/image8.png" style="width:6.5in;height:2.66111in" alt="HEC-HMS Subbasin | Surface Component Editor with appropriate selections." /></p>
+<p>Figure 9. HEC-HMS Subbasin, Loss Component Editor</p>
+<p><img src="media/image9.png" style="width:6.5in;height:2.72292in" alt="HEC-HMS Subbasin | Loss Component Editor with appropriate selections." /></p>
+<p>Figure 10. HEC-HMS Subbasin, Transform Component Editor</p>
+<p><img src="media/image10.png" style="width:6.5in;height:2.67896in" alt="HEC-HMS Subbasin | Loss Component Editor with appropriate selections." /></p>
+<p>The <em>Linear Reservoir Baseflow</em> method must be used. The <em>Discharge Initial Type</em> must be used. All other parameter selections/values achieved during model calibration should be left unchanged. Figure 11 shows an example of these options.</p>
+<p>Figure 11. HEC-HMS Subbasin, Baseflow Component Editor</p>
+<p><img src="media/image11.png" style="width:6.5in;height:5.79654in" alt="HEC-HMS Subbasin | Baseflow Component Editor with appropriate selections." /></p>
+<p>Note that the GW1 and GW2 Initial discharge values will be stochastically sampled and set during conformance and production simulations.</p>
+<h5 id="reaches">Reaches<a class="headerlink" href="#reaches" title="Permanent link">&para;</a></h5>
+<p>Depending upon the physical processes within the watershed of interest, multiple reach routing methods may be utilized within HEC-HMS FFRD applications. Regardless of the chosen routing method, the <em>Specified Discharge Initial Type</em> must be used. All other parameter selections/values achieved during model calibration should be left unchanged. Figure 12 shows an example of these options.</p>
+<p>Figure 12. HEC-HMS Routing Component Editor</p>
+<p><img src="media/image12.png" style="width:6.5in;height:3.27083in" alt="HEC-HMS Routing Component Editor with appropriate selections." /></p>
+<p>Note that the initial discharge values will be stochastically sampled and set during conformance and production simulations.</p>
+<h5 id="reservoirs">Reservoirs<a class="headerlink" href="#reservoirs" title="Permanent link">&para;</a></h5>
+<p>Depending upon the physical processes within the watershed of interest, multiple reservoir routing methods may be utilized within HEC-HMS FFRD applications. Regardless of the chosen routing method, the <em>Elevation Initial Condition</em> must be used. All other parameter selections/values achieved during model calibration should be left unchanged. Figure 12 shows an example of these options.</p>
+<p>Figure 13. HEC-HMS Reservoir Component Editor</p>
+<p><img src="media/image13.png" style="width:6.5in;height:3.88587in" alt="HEC-HMS Reservoir Component Editor with appropriate selections." /></p>
+<p>Note that the initial elevation values will be stochastically sampled and set during conformance and production simulations.</p>
+<h4 id="meteorologic-model">Meteorologic Model<a class="headerlink" href="#meteorologic-model" title="Permanent link">&para;</a></h4>
+<p>Unlike the basin models, a brand-new meteorologic model named, <em>SST</em>, should be created for use during the Conformance and Production phases. The <em>Metric Unit System</em> must be specified (this is used when transposing the gridded boundary conditions). For all FFRD applications, the <em>Gridded Precipitation</em> method must be selected. If snow accumulation/melt or evapotranspiration processes are relevant to the watershed of interest, the <em>Gridded Temperature</em> method must be selected (otherwise, this process should be set to <em>None</em>). Similarly, if evapotranspiration processes are relevant to the watershed of interest, the <em>Gridded Hamon Evapotranspiration</em> method must be selected (otherwise, this process should be set to <em>None</em>). The <em>Replace Missing</em> option should be specified as <em>Set to Default</em>. Figure 14 shows an example of these options.</p>
+<p>Figure 14. HEC-HMS Meteorology Model Component Editor</p>
+<p><img src="media/image14.png" style="width:6.5in;height:4.65484in" alt="HEC-HMS Meteorology Model Component Editor with appropriate selections." /></p>
+<p>Within the Gridded Precipitation node, any valid precipitation grid name can be chosen. These datasets will be stochastically sampled and set during conformance and production simulations. The <em>Normalize Start Time Shift Method</em> must be selected. The <em>Transpose</em> option should be set to <em>Yes</em>. Default values near the middle of the watershed in the basin model's coordinate reference system should be specified within the <em>X</em> and <em>Y Coordinate</em> entry fields. Figure 15 shows an example of these options.</p>
+<p>Figure 15. HEC-HMS Meteorology Model, Gridded Precipitation Component Editor</p>
+<p><img src="media/image15.png" style="width:6.5in;height:2.90556in" alt="HEC-HMS Meteorology Model | Gridded Precipitation Component Editor with appropriate selections." /></p>
+<p>If the Gridded Temperature method was selected, within the Gridded Temperature node, any valid temperature grid name can be chosen. These datasets will be stochastically sampled and set during conformance and production simulations. The <em>Normalize Start Time Shift Method</em> must be selected. Figure 16 shows an example of these options.</p>
+<p>Figure 16. HEC-HMS Meteorology Model, Gridded Temperature Component Editor</p>
+<p><img src="media/image16.png" style="width:6.5in;height:1.62851in" alt="HEC-HMS Meteorology Model | Gridded Temperature Component Editor with appropriate selections." /></p>
+<p>If the Gridded Hamon method was selected, all parameter selections/values achieved during model calibration should be left unchanged within the Gridded Hamon node. Figure 17 shows an example of these options.</p>
+<p>Figure 17. HEC-HMS Meteorology Model, Gridded Hamon Component Editor</p>
+<p><img src="media/image17.png" style="width:6.5in;height:1.50833in" alt="HEC-HMS Meteorology Model | Gridded Hamon Component Editor with appropriate selections." /></p>
+<h4 id="control-specifications">Control Specifications<a class="headerlink" href="#control-specifications" title="Permanent link">&para;</a></h4>
+<p>Similar to the meteorologic model, a brand-new Control Specification model, named <strong>SST</strong>, should be created for use during the Conformance and Production phases. <em>01Jan2100</em> should be entered within the <em>Start Date</em> entry field. <em>00:00</em> should be entered within the <em>Start Time</em> entry field. <em>04Jan2100</em> should be entered within the <em>End Date</em> entry field. <em>00:00</em> should be entered within the <em>End Time</em> entry field. Depending upon the physical processes within the watershed of interest, multiple computational time steps may be utilized within HEC-HMS FFRD applications. Figure 18 shows an example of these options.</p>
+<p>Figure 18. HEC-HMS Control Specifications Component Editor</p>
+<p><img src="media/image18.png" style="width:6.5in;height:3.01735in" alt="HEC-HMS Control Specifications Component Editor with appropriate selections." /></p>
+<h4 id="simulation-runs">Simulation Runs<a class="headerlink" href="#simulation-runs" title="Permanent link">&para;</a></h4>
+<p>Similar to the control specifications, a brand-new simulation run model, named SST, should be created for use during the Conformance and Production phases. Any basin model can be selected within this simulation as they will be updated during the conformance and production simulations. The SST meteorologic model and SST control specifications (which were previously created) should be selected. The <em>Spatial Results</em> option should be set to <em>Yes</em> and the <em>Spatial Interval</em> should be set to <em>1 Hour</em>. Figure 19 shows an example of these options.</p>
+<p>Figure 19. HEC-HMS Simulation Run Component Editor</p>
+<p><img src="media/image19.png" style="width:6.5in;height:3.75054in" alt="HEC-HMS Simulation Run Component Editor with appropriate selections." /></p>
+<p>The <em>No Ratio</em> method should be selected on the <em>Ratio</em> tab. Additionally, the <em>No</em> <em>Save States</em> option should be selected on the <em>States</em> tab.</p>
+<h3 id="importing-precipitation-data-storm-catalog">Importing Precipitation Data (Storm Catalog)<a class="headerlink" href="#importing-precipitation-data-storm-catalog" title="Permanent link">&para;</a></h3>
+<p>The tool used for generating storm catalogs produces a .grid file that follows the specification of a normal HEC-HMS .grid file that links gridded datasets to a project. This lets you quickly copy and paste a list of entries for hundreds of storms into your project and effectively import them without needing to manually create hundreds of gridsets in HEC-HMS.</p>
+<p>For the steps below, the <em>project.grid</em> file is the .grid file that exists in the HEC-HMS project and matches its name. It contains all the grid data used in calibration and POR simulations The <em>catalog.grid</em> file is the one that was created by StormCloud/StormHub and only contains the precipitation data for storms in the storm catalog.</p>
+<p>The instructions below assume you are using Notepad++ to edit the files.</p>
+<p>Make sure your HEC-HMS project is closed before editing any internal files.</p>
+<ol>
+<li>
+<p>Copy (or move) the storm data .dss files to the project <em>data</em> folder in a subdirectory called catalog.</p>
+</li>
+<li>
+<p>Make a backup copy of the catalog.grid file and give it the file extension <em>.gridbak</em> with the same filename as the original catalog.grid file.</p>
+</li>
+<li>
+<p>Open the original (not backup) catalog.grid file in a plaintext editor.</p>
+</li>
+<li>
+<p>Find and replace file paths to point to the project's catalog folder.</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Scroll down to the first grid data entry in the catalog.grid file and find the <em>DSS File Name</em> entry.</p>
+</li>
+<li>
+<p>Highlight the portion of the file path up to the last backslash (just before the file name), as shown in Figure 20.</p>
+</li>
+</ol>
+<p>Figure 20. Section of Text to Replace within .grid File</p>
+<p><img src="media/image20.png" style="width:6.3125in;height:2.45417in" alt="Portion of DSS file name path to highlight before using Replace in the project.grid file." /></p>
+<ol>
+<li>
+<p>Press Ctrl+H to open the Replace dialog. Note that it automatically places the highlighted text in the <em>Find what</em> field.</p>
+</li>
+<li>
+<p>In the <em>Replace with</em> field, enter <em>data\catalog</em>.</p>
+</li>
+<li>
+<p>Click Replace All on the right side.</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Save the catalog.grid file but leave it open.</p>
+</li>
+<li>
+<p>Make a backup copy of the project.grid file and give it the file extension .gridbak with the same filename as the original project.grid file.</p>
+</li>
+<li>
+<p>Open the original (not backup) project.grid file in a plaintext editor in a new window.</p>
+</li>
+<li>
+<p>Scroll to the bottom of the project.grid file and find the last grid entry. Add a blank line after the "End:" tag for the last grid, and then press Enter again to go to the following line.</p>
+</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Each entry must be separated by a blank line.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>From the catalog.grid file, copy all the storm grid entries and paste them into the project.grid file below the blank line you added.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Make sure not to copy the catalog.grid file's header (the first four lines beginning with "Grid Manager: ...”)</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Save the project.grid file. Close both .grid files.</li>
+</ol>
+<p>When you re-open your HEC-HMS project, you will see that hundreds of new gridsets are listed in the Watershed Explorer.</p>
+<h3 id="model-cleanup">Model Cleanup<a class="headerlink" href="#model-cleanup" title="Permanent link">&para;</a></h3>
+<p>The HEC-HMS project used during the Conformance and Production phases should be as lean as possible because it will be copied many times and reproducing unnecessary data is a waste. Below are several things that help reduce the size of the SST project. Most of the cleanup can happen within the HEC-HMS user interface (e.g., deleting basin models) but there are hints below where deleting a large number of entries using the HEC-HMS input files is faster (i.e., within Notepad++). Always be careful when editing HEC-HMS input files and make a backup before doing so.</p>
+<h4 id="basin-models_1">Basin Models<a class="headerlink" href="#basin-models_1" title="Permanent link">&para;</a></h4>
+<p>First, remove any basin models except for the finalized event calibration basin models. Also, remove any linkages to observed data (e.g., flow, stage, SWE) on the Options tab (set to none) of all basin elements (e.g., subbasins, junctions, reaches, etc.) as this information will not be utilized during stochastic simulations.</p>
+<h4 id="meteorologic-models">Meteorologic Models<a class="headerlink" href="#meteorologic-models" title="Permanent link">&para;</a></h4>
+<p>Next, remove any met models except for the SST met model you created in the steps above.</p>
+<h4 id="control-specifications_1">Control Specifications<a class="headerlink" href="#control-specifications_1" title="Permanent link">&para;</a></h4>
+<p>Also, remove control specifications except for SST from the project.</p>
+<h4 id="time-series-data">Time-Series Data<a class="headerlink" href="#time-series-data" title="Permanent link">&para;</a></h4>
+<p>It is unlikely that you will need any time-series data if you have unlinked all your observed data, are using gridded processes, and do not have any specified discharge elements (reservoirs, sources, etc.) in the model. If you are confident that you need certain time-series data, do not delete them.</p>
+<p>The following process removes the links from the HEC-HMS project, but you will need to clean up the DSS files manually. The DSS files that contain the time-series data were copied over during the initial Save As step. You can use the File&gt;References tool and filter to Time Series Data to see where these data are on disk and delete them manually. They should have been internalized to the copied project's data folder and are safe to delete because they are copies of the original.</p>
+<ol>
+<li>Make a backup copy of the project.gage file that exists in your HEC-HMS project and matches its name. Give it the file extension .gagebak with the same filename as the original project.gage file.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Open the original (not backup) project.gage in a plaintext editor.</p>
+</li>
+<li>
+<p>Delete everything below the file header (first 5 lines).</p>
+</li>
+</ol>
+<h4 id="paired-data">Paired Data<a class="headerlink" href="#paired-data" title="Permanent link">&para;</a></h4>
+<p>Unlike time-series data, it is very likely that several paired data objects are utilized within the basin models that will be used during the stochastic simulations. Thus, care needs to be taken to organize these paired data objects in such a way that any errors or compute issues can be efficiently investigated during the conformance and production phases.</p>
+<p>Begin by culling any unused paired data objects (i.e., storage-discharge, elevation-storage, etc.) within the HEC-HMS project. Then, for the remaining paired data references that utilize external DSS files, combine all records into a single DSS file. This paired data DSS file should be placed within the project's data folder. For any paired data references that utilize the Manual Data Entry method, these records can remain unaltered.</p>
+<h4 id="simulation-runs_1">Simulation Runs<a class="headerlink" href="#simulation-runs_1" title="Permanent link">&para;</a></h4>
+<p>Remove any simulation runs or any other computes (e.g., Uncertainty Analysis, Optimization Trial, etc.) from the project except for the SST run you created. Other compute types can be removed by deleting directory within the base project directory (with the HEC-HMS project closed):</p>
+<ul>
+<li>
+<p>Delete the montecarlo directory to delete all Uncertainty Analyses.</p>
+</li>
+<li>
+<p>Delete the optimizer directory to delete all Optimization Trials.</p>
+</li>
+<li>
+<p>Delete the ensemble directory to delete all Ensemble Analyses.</p>
+</li>
+<li>
+<p>Delete the forecast directory to delete all Forecast Alternatives.</p>
+</li>
+<li>
+<p>Delete the frequency directory to delete all Frequency Analyses.</p>
+</li>
+</ul>
+<h4 id="dss-files-in-the-project-directory">DSS Files in the Project Directory<a class="headerlink" href="#dss-files-in-the-project-directory" title="Permanent link">&para;</a></h4>
+<p>There will be some straggler files associated with now-deleted simulations to clean up. Delete any DSS files with a name that matches a meteorologic model which was removed. These files contain a met data cache and can be removed. You can verify this is the case by opening the DSS file in DSSVue and verifying:</p>
+<ul>
+<li>
+<p>It only contains meteorologic data.</p>
+</li>
+<li>
+<p>The F-part for all paths contains "MET:xxxxx" where "xxxxx" is the name of the met model.</p>
+</li>
+</ul>
+<p>Delete any DSS files with a name that matches a simulation run which was removed. These files contain a They can be deleted. You can verify this is the case by opening the DSS file in DSSVue and verifying:</p>
+<ul>
+<li>
+<p>It only contains simulation results.</p>
+</li>
+<li>
+<p>The F-part for all paths contains "RUN:xxxxx" where "xxxxx" is the name of the simulation run.</p>
+</li>
+</ul>
+<p>Delete any DSS files with a name that matches other simulation types (e.g., Uncertainty Analysis, Optimization Trial, etc.) can be deleted as well.</p>
+<h4 id="other-files-in-the-project-directory">Other Files in the Project Directory<a class="headerlink" href="#other-files-in-the-project-directory" title="Permanent link">&para;</a></h4>
+<p>All files with the .out and .log extensions can be safely deleted. Additionally, all .sqlite files that do not match one of the basin models that remain within the HEC-HMS project can be deleted. Finally, the results directory can be safely deleted.</p>
+<h4 id="cleaning-up-gis-data">Cleaning Up GIS Data<a class="headerlink" href="#cleaning-up-gis-data" title="Permanent link">&para;</a></h4>
+<p>There will not be modification of the geospatial information for any basin element, so the source or processed terrain data will no longer be necessary. Thus, the gis, maps, and terrain directories should be deleted.</p>
+<h3 id="developing-continuous-initial-snow-states">Developing Continuous Initial Snow States<a class="headerlink" href="#developing-continuous-initial-snow-states" title="Permanent link">&para;</a></h3>
+<p>This process is only required for projects that utilize the Gridded Temperature Index snow method:</p>
+<ol>
+<li>First, re-run the period of record with full spatial results turned on to get full set of gridded state variables for snow.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Second, sanitize the output gridded data sets using the Vortex | Sanitizer tool.</li>
+</ol>
+<h3 id="hec-hms-model-delivery">HEC-HMS Model Delivery<a class="headerlink" href="#hec-hms-model-delivery" title="Permanent link">&para;</a></h3>
+<p>The prepared and cleaned up model files must be delivered by posting them to the appropriate location on the project directory. There are two distinct deliveries associated with the HEC-HMS model delivery: the runnable model and template files for use by cloud-compute tools to generate input files that account for variability in antecedent conditions for each stochastic event.</p>
+<h4 id="base-model">Base Model<a class="headerlink" href="#base-model" title="Permanent link">&para;</a></h4>
+<p>Post the prepared and runnable HEC-HMS models to the following location within the project directory:</p>
+<p><u>Delivery Location</u>: conformance &gt; hydrology &gt; [basin-name]</p>
+<p>Figure 21. Example Delivered HMS Model Dataset</p>
+<p><img src="media/image21.png" style="width:6.5in;height:4.96736in" alt="Graphical user interface AI-generated content may be incorrect." /></p>
+<h4 id="antecedent-condition-template-files">Antecedent Condition Template Files<a class="headerlink" href="#antecedent-condition-template-files" title="Permanent link">&para;</a></h4>
+<p>The basin-record-gen-plugin cloud-compute actions take HMS template files to create an array of .basin and .control files to represent the variation in antecedent conditions for stochastic events. The input template files to be delivered are:</p>
+<ul>
+<li>
+<p>Calibrated Period of Record HECHMS DSS output</p>
+</li>
+<li>
+<p>Individual .basin files from each calibration event</p>
+</li>
+<li>
+<p>Individual .control files from each calibration event</p>
+</li>
+</ul>
+<p>The template files that will be used by cloud compute will be posted to the location below.</p>
+<p><u>Delivery Location</u>: conformance &gt; basin-generation</p>
+<h2 id="hec-ressim-delivery">HEC-ResSim Delivery<a class="headerlink" href="#hec-ressim-delivery" title="Permanent link">&para;</a></h2>
+<p>The following sections serve to describe how to prepare and deliver the HEC-ResSim FFRD model for conformance phase and production phase runs using Cloud Compute.</p>
+<h3 id="software-version_1">Software Version<a class="headerlink" href="#software-version_1" title="Permanent link">&para;</a></h3>
+<p>The HEC-ResSim version used for model development must be verified and consistent with the version called for in Section 7 of SOP Volume II.</p>
+<h3 id="create-the-conformance-run-template">Create the Conformance Run Template<a class="headerlink" href="#create-the-conformance-run-template" title="Permanent link">&para;</a></h3>
+<p>A single alternative and a single simulation shall be the starting point for the conformance model:</p>
+<ul>
+<li>
+<p>Conformance alternative name=“fema_ffrd”</p>
+</li>
+<li>
+<p>Conformance simulation name=“fema_ffrd”</p>
+</li>
+</ul>
+<h4 id="conformance-alternative">Conformance Alternative<a class="headerlink" href="#conformance-alternative" title="Permanent link">&para;</a></h4>
+<p>The simplest way to create the “fema_ffrd” alternative is to make a copy of one of the existing calibration alternatives.</p>
+<ol>
+<li>From the Reservoir Network Module, select the Alternative Editor, click on one of the calibration runs, and use the Save As… option.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>Save as “fema_ffrd” and provide an informative Description such as “FEMA FFRD Cloud Compute Alternative – Originated as a copy of April 1990 calibration alternative for use with ffrd cloud computes”</li>
+</ol>
+<p>Figure 22. Step 2 Window</p>
+<p><img src="media/image22.png" style="width:6.5in;height:1.72549in" /></p>
+<ol>
+<li>No other changes should be necessary but ensure that the appropriate timestep and flow computation method are selected. The inflow mapping must be consistent with the simulation date range and timestep.</li>
+</ol>
+<h4 id="conformance-simulation">Conformance Simulation<a class="headerlink" href="#conformance-simulation" title="Permanent link">&para;</a></h4>
+<p>Next move to the Simulation Module and create the new “fema_ffrd” simulation.</p>
+<ol>
+<li>As previously state, it is easiest to start with the calibration simulation that was paired with the alternative used to create the “fema_ffrd” alternative, because the simulation dates must match the available data. First open the matching calibration simulation, and use the right-click secret menu to copy the Simulation Time Window.</li>
+</ol>
+<p>Figure 23. Step 1 Window</p>
+<p><img src="media/image23.png" style="width:2.8in;height:1.86226in" alt="Graphical user interface, text, application, chat or text message AI-generated content may be incorrect." /></p>
+<ol>
+<li>
+<p>Use the Simulation&gt;Create a New Simulation option to create the fema_ffrd simulation, and give it an informative description such as, “FEMA Future of Flood Risk Data (FFRD) Cloud Compute Simulation.”</p>
+</li>
+<li>
+<p>Use the secret right-click Paste TimeWindow option to make the simulation time window match the currently available data. The cloud compute modeler will automate the updates to these dates to match what is sampled during the production runs.</p>
+</li>
+<li>
+<p>Run the simulation to ensure that nothing has broken, and note the total compute time for the report.</p>
+</li>
+</ol>
+<p>Figure 24. Step 4 Window</p>
+<p><img src="media/image24.png" style="width:4.05035in;height:4.11702in" alt="Graphical user interface, text, application AI-generated content may be incorrect." /></p>
+<h3 id="within-model-cleanup">Within Model Cleanup<a class="headerlink" href="#within-model-cleanup" title="Permanent link">&para;</a></h3>
+<p>As with HEC-HMS, the HEC-ResSim watershed used during the Conformance and Production phases should be as lean as possible because it will be copied many times and reproducing unnecessary data is a waste. While some model-cleanup was done during the calibration modeling, the following steps shall be taken to ensure the most compact, streamlined model for conformance and production.</p>
+<p>Note</p>
+<p>Always be careful when directly editing HEC-ResSim model files and make a backup before doing so.</p>
+<p>These instructions assume you have already done some cleanup and thorough documentation during earlier phases, e.g., removed all unnecessary networks and scripts, and any particularly messy, disorganized pieces of the model.</p>
+<h4 id="create-a-zipped-backup-model">Create a Zipped Backup Model<a class="headerlink" href="#create-a-zipped-backup-model" title="Permanent link">&para;</a></h4>
+<p>Before zipping up your model, make sure the current state has been fully documented. Use the File&gt;Watershed Info… feature to log a comment about the current state of the model.</p>
+<p>Figure 25. Zipped Backup Model Window</p>
+<p><img src="media/image25.png" style="width:6.5in;height:5.74125in" alt="Graphical user interface, text, application AI-generated content may be incorrect." /></p>
+<p>Then completely close the model and all associated files before creating a zipfile back up. Now that there is a backup of the model, delete as much superfluous files as possible.</p>
+<h4 id="remove-all-simulations-except-fema_ffrd">Remove All Simulations except “fema_ffrd”<a class="headerlink" href="#remove-all-simulations-except-fema_ffrd" title="Permanent link">&para;</a></h4>
+<p>Reopen the model and go to the Simulation Module. Delete all simulations except fema_ffrd, using the Simulation&gt;Delete Simulation option.</p>
+<p>Figure 26. Delete Simulation Window</p>
+<p><img src="media/image26.png" style="width:3in;height:2.90055in" alt="Graphical user interface AI-generated content may be incorrect." /></p>
+<h4 id="delete-all-alternatives-except-fema_ffrd">Delete all Alternatives except fema_ffrd<a class="headerlink" href="#delete-all-alternatives-except-fema_ffrd" title="Permanent link">&para;</a></h4>
+<p>From the Network Module, Alternative Editor, deleted all but the fema_ffrd alternative. There is no bulk delete option, but Ctrl+D can be used to make this process slightly faster.</p>
+<h4 id="remove-all-unnecessary-outputs-in-fema_ffrd-alternative">Remove all Unnecessary Outputs in fema_ffrd alternative<a class="headerlink" href="#remove-all-unnecessary-outputs-in-fema_ffrd-alternative" title="Permanent link">&para;</a></h4>
+<p>Generally, only simulated flow and elevation outputs are required to be saved. The outputs that are required for FFRD simulations either feed directly to a HEC-RAS model, aid in identification interesting events (event filtering), or provide the required data to develop a relevant frequency curve for conformance metrics.</p>
+<p>The DSS Output tab in the alternative writes all computed and interpolated time series by default. Prior to handoff, the user should uncheck both of these in the Alternative Editor. The user should also go a step further and uncheck additional items on the subtabs. On the Reservoir tab, the user should only need the Reservoir Pool and flows so all other outputs can be unchecked. The user can also uncheck all outputs on the Reaches and Diversion tabs. For Junctions and State Variables, the user may want to uncheck some outputs; however, it is recommended that any record that may be referenced during validation (such as downstream control points or data handoff points between models) should remain selected.</p>
+<p>Figure 27. Alternative Editor Window</p>
+<p><img src="media/image27.png" style="width:5.64216in;height:6.10053in" alt="Graphical user interface, application AI-generated content may be incorrect." /></p>
+<h4 id="excess-rules-and-operation-sets">Excess Rules and Operation Sets<a class="headerlink" href="#excess-rules-and-operation-sets" title="Permanent link">&para;</a></h4>
+<p>Rules and operation sets create very little extra bulk to model file size, but can create clutter and confusion. To alleviate this, during the Calibration Phase, ensure that the intention behind rules was included in their descriptions, and that the operation sets used for FFRD runs were clearly marked. Cleaning up unneeded operation sets from a model with 16 reservoirs, each with 3 operation sets required 208 clicks but did not result in any noticeable file size reduction, so the modeler should focus on tidiness in this case, and may leave extra operation sets in the model without causing harm.</p>
+<p>Figure 28. Operation Set Deletion Window</p>
+<p><img src="media/image28.png" style="width:3.60031in;height:2.51688in" /></p>
+<h4 id="delete-unnecessary-map-layers">Delete Unnecessary Map Layers<a class="headerlink" href="#delete-unnecessary-map-layers" title="Permanent link">&para;</a></h4>
+<p>From the View&gt;Layers menu in any module, remove any map layers that are unneeded. Do not remove the Stream Alignment or Study layers or associated subparts.</p>
+<h3 id="manual-model-cleanup">Manual Model Cleanup<a class="headerlink" href="#manual-model-cleanup" title="Permanent link">&para;</a></h3>
+<p>Next you will remove remaining excess files via the Windows File Explorer or similar. Document changes in the WatershedInfo file and close the watershed and associated files. The final cleanup step is the most dangerous. As a precaution, zip a copy of the model again.</p>
+<h4 id="map-files">Map Files<a class="headerlink" href="#map-files" title="Permanent link">&para;</a></h4>
+<p>Remove unneeded map shapefiles from the <em>maps</em> directory via the File Explorer. For example:</p>
+<ul>
+<li>
+<p>highways</p>
+</li>
+<li>
+<p>project points.</p>
+</li>
+</ul>
+<h4 id="shared-directory-files">Shared Directory Files<a class="headerlink" href="#shared-directory-files" title="Permanent link">&para;</a></h4>
+<p>The watershed <em>shared</em> directory holds inputs and other shared files. Remove the files not needed.</p>
+<h4 id="networks-alternatives-simulations">Networks, Alternatives, Simulations<a class="headerlink" href="#networks-alternatives-simulations" title="Permanent link">&para;</a></h4>
+<p>Remove remnant files associated with the networks, alternatives, and simulations already deleted from the ResSim GUI. Table 1 lists files to consider removing from the rss subdirectory.</p>
+<p>Table 1. RSS Subdirectory Removable Files</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 48%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th>File Extension</th>
+<th>Keep</th>
+<th>Remove</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bak</td>
+<td>Any associated with fema_ffrd, ffrd_{basin-name}.*.bak, stream.align.bak, WatershedInfo.md.bak</td>
+<td>Everything else</td>
+</tr>
+<tr>
+<td>conf</td>
+<td>rss.conf</td>
+<td></td>
+</tr>
+<tr>
+<td>dbf</td>
+<td><p>resop.dbf</p>
+<p>ressysop.dbf</p>
+<p>{network-name}_ExtendedOp.dbf</p>
+<p>{network-name}_ExtendedSysOp.dbf</p></td>
+<td>Files associated with old networks</td>
+</tr>
+<tr>
+<td>dbt</td>
+<td><p>resop.dbt</p>
+<p>ressysop.dbt</p>
+<p>{network-name}_ExtendedOp.dbt</p>
+<p>{network-name}_ExtendedSysOp.dbt</p></td>
+<td>Files associated with old networks</td>
+</tr>
+<tr>
+<td>dss</td>
+<td><p>{network-name}_Extended.dss</p>
+<p>{network-name}_Extended-GlobalVariablesTables.dss</p></td>
+<td>Files associated with old networks</td>
+</tr>
+<tr>
+<td>fits</td>
+<td>Two files associated with each alternative</td>
+<td>All other fits files</td>
+</tr>
+<tr>
+<td>igv</td>
+<td>one file associated with each alternative</td>
+<td>All other igv files</td>
+</tr>
+<tr>
+<td>malt</td>
+<td>one file associated with each alternative</td>
+<td>No other files existed</td>
+</tr>
+<tr>
+<td>mcscript</td>
+<td>one file associated with each alternative</td>
+<td>All other mcscript files</td>
+</tr>
+<tr>
+<td>ralt</td>
+<td>one file associated with each alternative</td>
+<td>No other files existed</td>
+</tr>
+<tr>
+<td>rssrun</td>
+<td>none</td>
+<td>No rssrun files needed for ResSim standalone</td>
+</tr>
+<tr>
+<td>simperiod</td>
+<td>One file associated with each simulation</td>
+<td>No other files existed</td>
+</tr>
+<tr>
+<td>simrun</td>
+<td>One file associated with each simulation</td>
+<td></td>
+</tr>
+<tr>
+<td>xml</td>
+<td>none</td>
+<td>no xml reports were needed</td>
+</tr>
+<tr>
+<td>Xsd, xlt</td>
+<td>None</td>
+<td>no AlternativeInput report files needed</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="ressim-script-considerations">ResSim Script Considerations<a class="headerlink" href="#ressim-script-considerations" title="Permanent link">&para;</a></h3>
+<p>ResSim models with scripts may be flagged as a security risk within the Civil Works Business Intelligence (CWBI) cloud, and no jars or python modules will be accepted on CWBI. To address this concern, modelers will clean existing models of scripts by reviewing each script function and replacing it wherever possible with simpler operations. If scripted operations (rules or state variables) are necessary, the modeler will conduct a careful review and write justification for the CWBI security team to support the need for the script’s inclusion on CWBI. Modelers should keep in mind that scripted rules and state variables will not be calculated during the HEC-ResSim lookback period, and this can impact overall model results. Scripts must be structured to only require the data available within the event.</p>
+<h3 id="ressim-model-delivery">ResSim Model Delivery<a class="headerlink" href="#ressim-model-delivery" title="Permanent link">&para;</a></h3>
+<p>Open the watershed and ensure everything remains functional in each module. Make one last note in the WatershedInfo.md file of everything that was deleted. Post the model to the Model Library.</p>
+<p><u>Delivery Location</u>: conformance &gt; reservoir-operations &gt; [basin-name]</p>
+<p>If the model is in zipped format prior to uploading to the model library, the <em>unzip in Model Library</em> should be used to ensure the model is posted in an un-zipped format. Note that for HEC-ResSim, uploading in zip format may be required to avoid firewall filtering of specific files associated with the model.</p>
+<p>Figure 29. Zip File Upload on Model Library</p>
+<p><img src="media/image29.png" style="width:6.5in;height:1.32708in" alt="Graphical user interface, text, application, chat or text message AI-generated content may be incorrect." /></p>
+<h2 id="hec-ras-delivery">HEC-RAS Delivery<a class="headerlink" href="#hec-ras-delivery" title="Permanent link">&para;</a></h2>
+<p>A final calibration phase HEC-RAS model for specific historic storm events is the starting point for the Conformance Phase.</p>
+<p>Various changes are made to prepare the model for generalized synthetic storm events driven by SST before they are posted to the Model Library in preparation for cloud-compute, which are described in the sections below.</p>
+<h3 id="software-version_2">Software Version<a class="headerlink" href="#software-version_2" title="Permanent link">&para;</a></h3>
+<p>The HEC-RAS software version used for model development must be verified and consistent with the version stated in Section 8 of SOP Volume II.</p>
+<h3 id="plans-and-naming-conventions">Plans and Naming Conventions<a class="headerlink" href="#plans-and-naming-conventions" title="Permanent link">&para;</a></h3>
+<p>HEC-RAS model is delivered with a single plan file and single flow file with generalized naming conventions to accept SST events that will not be confused for actual observed events. The following changes are made to the original calibrated model names:</p>
+<ul>
+<li>
+<p>Project and Filenames: [model-unit]</p>
+</li>
+<li>
+<p>Geometry Name: [model-unit]</p>
+</li>
+<li>
+<p>Plan Name: SST</p>
+</li>
+<li>
+<p>Plan Short Name: SST</p>
+</li>
+</ul>
+<h3 id="plan-file">Plan File<a class="headerlink" href="#plan-file" title="Permanent link">&para;</a></h3>
+<p>The following adjustments should be made on the desktop version of the model plan file.</p>
+<h4 id="time-window">Time Window<a class="headerlink" href="#time-window" title="Permanent link">&para;</a></h4>
+<p>The simulation time window selected for SST events, described section 1.4 above, will be used for the generalized SST event HEC-RAS time window. It will match the time window used in HEC-HMS and HEC-ResSim.</p>
+<p>Note that the time window is somewhat imperfect in that initial conditions in the HEC-RAS model start during the look-back period prior to the 72-hour precipitation event. The processes for FFRD SST event time windows, start date, and initial conditions will be considered for improvement in future versions of the SOP.</p>
+<h4 id="warm-up-time-period">Warm-up Time Period<a class="headerlink" href="#warm-up-time-period" title="Permanent link">&para;</a></h4>
+<p>The plan file warm-up time period settings should be set to balance accuracy and efficiency in terms of cost and computation time in the cloud-compute environment.</p>
+<p>The use of a warm-up time period allows for the channels in the model to be primed with water before the start of the simulation. Note that in the context of the FFRD HEC-RAS models, excess precipitation gids will not contribute to initial flows in channels so the flow boundary conditions will be the primary contributor during the warm-up, if used.</p>
+<p>In some cases, the modeler may determine that warm up time periods do not improve the ability of the HEC-RAS model to predict peak water surface elevations, and it may not be needed.</p>
+<p>Figure 30. HEC-RAS Unsteady Computation Options and Tolerances Window</p>
+<p><img src="media/image30.png" style="width:4.3in;height:5.59099in" /></p>
+<h4 id="initial-conditions-points">Initial Conditions Points<a class="headerlink" href="#initial-conditions-points" title="Permanent link">&para;</a></h4>
+<p>Ensure that the <em>Keep initial elevations constant during warmup</em> option is set to yes, which allows initial conditions (IC) points representing pool elevations that will be varied in SST events to remain constant when a warmup time period is also sued.</p>
+<h4 id="restart-files">Restart Files<a class="headerlink" href="#restart-files" title="Permanent link">&para;</a></h4>
+<p>If restart files were used for the calibration runs, they must be removed for the cloud-based SST events.</p>
+<h4 id="breaches">Breaches<a class="headerlink" href="#breaches" title="Permanent link">&para;</a></h4>
+<p>All breach locations with various breach parameters will be included in the final calibration phase model prior to the start of the Conformance Phase. For the model upload for cloud compute, all breaches should be turned on (<em>Breach This Structure</em> checkbox). The trigger breach elevation may be set to the toe of the structure to be breached, but cloud-compute will handle random sampling of this value during computations.</p>
+<h4 id="equation-set">Equation Set<a class="headerlink" href="#equation-set" title="Permanent link">&para;</a></h4>
+<p>The 2D equation set selected in the plan file should be consistent with the selected equation set used for the calibration of the model. This should be verified prior to model upload for cloud compute.</p>
+<h4 id="matrix-solver">Matrix Solver<a class="headerlink" href="#matrix-solver" title="Permanent link">&para;</a></h4>
+<p>The plan file 2D <em>matrix solver</em> selected in HEC-RAS may be evaluated to balance computational cost and numerical stability prior to delivery to cloud compute.</p>
+<h4 id="solver-cores-setting">Solver Cores Setting<a class="headerlink" href="#solver-cores-setting" title="Permanent link">&para;</a></h4>
+<p>The plan file, <em>Solver Cores</em> setting on the run should be set to optimize efficiency in terms of cost and computation time in the cloud-compute environment. Coordination with the cloud environment support team is needed to determine the optimal Solver Core setting, which accounts for type of compute resource to be used and computation time. Note that the <em>ras-runner</em> compute manifest should also call the appropriate compute resources that match this HEC-RAS solver core setting.</p>
+<p>Figure 31. View of Window that Defines Solver Core Settings</p>
+<p><img src="media/image31.png" style="width:4.09282in;height:5.32161in" /></p>
+<h4 id="output-control-options">Output Control Options<a class="headerlink" href="#output-control-options" title="Permanent link">&para;</a></h4>
+<p>Ensure that no unnecessary output is written due to settings in the Output Control Options. It is common to turn on certain variables to be saved to the HDF5 output file during the model development and calibration process, but those should not be carried forward for the cloud-compute runs during the Conformance or Production Phases of the project.</p>
+<p>Figure 32. Example Setting for Output Control Options</p>
+<p><img src="media/image32.png" style="width:4.96608in;height:2.64327in" /></p>
+<h3 id="mapping-output-interval">Mapping Output Interval<a class="headerlink" href="#mapping-output-interval" title="Permanent link">&para;</a></h3>
+<p>The mapping output interval can have a significant impact on HDF output file size. The hydraulic modeler should coordinate with the model integration lead and other team members to investigate whether the critical event-level outputs can be achieved with a longer mapping output interval. Note that the maximum water surface elevation and maximum velocity for each cell is recorded at the computation interval, which lessens the need for a short mapping output interval.</p>
+<h3 id="geometry">Geometry<a class="headerlink" href="#geometry" title="Permanent link">&para;</a></h3>
+<p>Although no special changes to the geometry file will be necessary to deliver the desktop model for cloud compute, it is possible that minor geometry adjustments will be needed in the conformance phase models due to unique issues that were not discovered during the calibration of individual models. Note if any updates to the models that affect linking take place, corresponding updates to Model Linking Register are needed. The model integration lead will own the Model Linking Register throughout the process.</p>
+<p>The geometry file (.g01) should be uploaded with the model to the compute directory. Note that the file is not required for cloud-compute, but it is retained to allow for a desktop modeler to work with the model locally in future steps if needed.</p>
+<h3 id="flow-file">Flow File<a class="headerlink" href="#flow-file" title="Permanent link">&para;</a></h3>
+<p>Several updates to the flow file are needed prior to upload for cloud compute to fully link to the input data sources for SST events. Relative path name references should be based on the directory structure.</p>
+<p>Note that cloud-compute ingests only the HDF files for most of the key inputs for the computation and does not use the flow file. However, the flow file itself (.f01) should be uploaded with the model to the compute directory to allow for a desktop modeler to work with the model locally in future steps if needed.</p>
+<h4 id="observed-data">Observed Data<a class="headerlink" href="#observed-data" title="Permanent link">&para;</a></h4>
+<p>Deleted references to observed data hydrographs from the calibration events. Rating Curve tables may be maintained.</p>
+<h4 id="upstream-inflows">Upstream Inflows<a class="headerlink" href="#upstream-inflows" title="Permanent link">&para;</a></h4>
+<p>Any upstream inflow hydrographs must be updated to reference appropriate simulated outputs based on the Model Linking Register.</p>
+<h4 id="meteorological-data">Meteorological Data<a class="headerlink" href="#meteorological-data" title="Permanent link">&para;</a></h4>
+<p>Excess Precipitation grids must be updated to reference HMS results from SST events.</p>
+<p>Reference the directory structure for relative pathnames for reference to the excess precipitation grids.</p>
+<p>Filename: exported-precip.dss</p>
+<h4 id="hms-baseflows">HMS Baseflows<a class="headerlink" href="#hms-baseflows" title="Permanent link">&para;</a></h4>
+<p>Baseflow hydrographs must be updated to reference HMS results from SST events.</p>
+<p>Reference the directory structure for relative pathnames for reference to the baseflows.</p>
+<p>Filename: SST.dss</p>
+<h4 id="downstream-water-surface">Downstream Water Surface<a class="headerlink" href="#downstream-water-surface" title="Permanent link">&para;</a></h4>
+<p>Appropriate adjustments to the downstream water surface boundary condition must be made. This may be an adjustment from an observed time series to a rating curve, or from an observed tidal stage time series to a representative fixed water surface during synthetic rainfall events. The main body of the SOP provides general guidance on selection.</p>
+<h4 id="dam-releases-from-ressim-or-hms">Dam Releases from ResSim or HMS<a class="headerlink" href="#dam-releases-from-ressim-or-hms" title="Permanent link">&para;</a></h4>
+<p>Dam outflow hydrographs must be updated to reference ResSim or HMS results from SST events according to the Model Linking Register and Dam Model Scoping Table.</p>
+<p>Reference the directory structure for relative pathnames for reference to the simulated dam outflows.</p>
+<p>ResSim output filename: simulation.dss</p>
+<p>HMS output filename: SST.dss</p>
+<h3 id="ras-mapper-file">RAS Mapper File<a class="headerlink" href="#ras-mapper-file" title="Permanent link">&para;</a></h3>
+<p>The RAS Mapper file must associate with the terrain-modeling file according to the directory structure. Reference to the default location for land cover should remain in place to allow for modelers to download the model and recreate results. Links to plans and results from calibration efforts or any data other than the single delivered plan must be deleted.</p>
+<p>The RAS Mapper file is also used in cloud-compute during depth and velocity grid generation. This process will refer to the separate path to a lower resolution grid. The requirements for this version of the RAS Mapper are not final as of June 2025.</p>
+<h3 id="additional-hec-ras-delivery-steps">Additional HEC-RAS Delivery Steps<a class="headerlink" href="#additional-hec-ras-delivery-steps" title="Permanent link">&para;</a></h3>
+<p>The following sections show addition actions that are required to prepare the HEC-RAS models for cloud compute.</p>
+<h4 id="run-plan-on-desktop">Run Plan on Desktop<a class="headerlink" href="#run-plan-on-desktop" title="Permanent link">&para;</a></h4>
+<p>The HEC-RAS model plan must be executed on desktop to build the intermediate files that are used directly by cloud compute. After all final changes to the model are made, all out-of-date intermediate files should be deleted and the model should be run to create a clean and current set of files.</p>
+<p>Note that the delivered .p01.HDF file will include results data that will be removed from the file during the cloud-compute.</p>
+<h4 id="verify-dimensions-inflows-in-hdf-file">Verify Dimensions Inflows in HDF File<a class="headerlink" href="#verify-dimensions-inflows-in-hdf-file" title="Permanent link">&para;</a></h4>
+<p>The HEC-RAS HDF file must have dimensions that match the number of time steps for boundary condition inputs. For example, if the duration of the simulation for SST events is 10 days with hourly outputs the HEC-HMS or HEC-ResSim outputs will have 240 ordinates.</p>
+<p>Likewise, the HEC-RAS *.p01.HDF file input tables should have 240 ordinates.</p>
+<p>Path: Event Conditions&gt;Unsteady&gt;Boundary Conditions&gt;Flow Hydrographs</p>
+<p>Figure 33. HDF Input Dimensions</p>
+<p><img src="media/image33.png" style="width:5.24264in;height:3.60599in" alt="Graphical user interface, text, application, email AI-generated content may be incorrect." /></p>
+<h4 id="verify-dimensions-of-excess-precipitation">Verify Dimensions of Excess Precipitation<a class="headerlink" href="#verify-dimensions-of-excess-precipitation" title="Permanent link">&para;</a></h4>
+<p>The dimensions of the excess precipitation inputs must match the values expected by the HEC-RAS HDF file. The SST-generated excess precipitation grid dimensions can be checked via the Grid Info dialog through the DSS-Vue software, as shown in Figure 34. The HEC-RAS HDF file dimensions can be checked via the table size from the example path shown in Figure 35. Note that the HEC-RAS HDF table first dimension includes a time step component, while the second dimension value is a total number of values in a single grid (number of cells wide by number of cells tall).</p>
+<p>Figure 34. Location to Check Excess Precipitation Dimensions</p>
+<p><img src="media/image34.png" style="width:5.2in;height:4.31251in" alt="Text AI-generated content may be incorrect." /></p>
+<p>Figure 35. Precipitation Grid Dimensions in HEC-RAS HDF File</p>
+<p><img src="media/image35.png" style="width:6.1in;height:1.70013in" alt="Graphical user interface, text, application AI-generated content may be incorrect." /></p>
+<h4 id="list-cells-affected-by-initial-conditions-points">List Cells Affected by Initial Conditions Points<a class="headerlink" href="#list-cells-affected-by-initial-conditions-points" title="Permanent link">&para;</a></h4>
+<p>The cloud compute will vary initial reservoir elevations for each event for all reservoirs modeled as reservoirs in HEC-HMS or included in the HEC-ResSim model, as defined in the Dam Scoping Table. Each of these reservoirs will include a HEC-RAS Initial Conditions point.</p>
+<p>The control for the varied IC point elevation is not within the flow file that desktop HEC-RAS users are familiar with. Rather, the reservoir pool starting condition are fed to the Linux/cloud compute for HEC-RAS through the .p01.HDF file, from the Event Conditions/Unsteady/Initial Conditions/2D Flow Areas/Perimeter 1 path.</p>
+<p>Figure 36. HDF File Path that Controls IC Point Starting Elevations</p>
+<p><img src="media/image36.png" style="width:4.8in;height:4.20647in" /></p>
+<p>This path includes an array of IC elevations for each cell in the model, and must be over-written prior to cloud compute. The HEC-RAS modeler integrator must deliver a list of all cells that could potentially be wet for the highest possible sampled IC to the cloud compute team. To do this, a temporary model run using a very-high-IC-point, high water level for the reservoir should be computed. After the computation completes, the resulting HDF file must be opened, the previously mentioned path tabulated and exported to a table using the HDFViewer software. This list of cells will be used by cloud compute for over-writing of pool levels in SST events.</p>
+<p>Note</p>
+<p>HEC-RAS will ignore an IC in cells with bottom elevations that are lower than the pre-set IC elevation. This is why it is appropriate to set IC elevations for all cells that are possibly wet for IC.</p>
+<p>To generate this list of points, the following steps can be followed.</p>
+<ol>
+<li>Open the .p01.hdf file and navigate to the array mentioned above.</li>
+</ol>
+<!-- -->
+
+<ol>
+<li>
+<p>Table &gt; Select All &gt; Copy. This data is the initial elevation applied to each cell in order of cell number.</p>
+</li>
+<li>
+<p>To reformat this data into a list of cell numbers. Paste these values into Excel. Insert a column to the left named Cell Num, number this column starting at 0.</p>
+</li>
+</ol>
+<p>Figure 37. Table Resulting from Step 3</p>
+<p><img src="media/image37.png" style="width:2.28849in;height:3.66456in" alt="A picture containing table AI-generated content may be incorrect." /></p>
+<ol>
+<li>Filter these values, remove all ‘NaN’ rows. Also remove all rows referencing cells whose initial elevations may be specified but will not be varied in cloud compute.</li>
+</ol>
+<p>Figure 38. Table resulting from Step 4.</p>
+<p><img src="media/image38.png" style="width:4.66285in;height:4.07577in" /></p>
+<ol>
+<li>
+<p>Sort remaining cells by smallest to largest cell number.</p>
+</li>
+<li>
+<p>Copy these cell numbers (only the cell numbers) into a new sheet using Paste Special&gt;Transpose. This will convert the column of cell numbers into a single row. Save the sheet as a comma delimited file (.csv).</p>
+</li>
+<li>
+<p>Cell numbers will be stored in a single row, separated by commas.</p>
+</li>
+</ol>
+<p>Figure 39. Text list resulting from Step 7</p>
+<p><img src="media/image39.png" style="width:6.5in;height:2.18307in" /></p>
+<h4 id="delivery-of-cell-list-for-initial-conditions-points">Delivery of Cell List for Initial Conditions Points<a class="headerlink" href="#delivery-of-cell-list-for-initial-conditions-points" title="Permanent link">&para;</a></h4>
+<p>This list of cells will be delivered as a field in the Model Linking Resister, which will be utilized in the development of the HEC-RAS compute manifests described elsewhere.</p>
+<p>When multiple IC points that will be used for reservoir pool initial elevations are present in a model unit, multiple cell lists will be prepared in a similar manner to that described above.</p>
+<p><u>Delivery Location</u>: basin-data &gt; scoping-data &gt; model-linking-register</p>
+<h3 id="hec-ras-model-delivery">HEC-RAS Model Delivery<a class="headerlink" href="#hec-ras-model-delivery" title="Permanent link">&para;</a></h3>
+<p>Fully run the final model on desktop and perform all QC of results described in other sections.</p>
+<p>Remove output files, unneeded subfolders, and backup files from directory.</p>
+<p>Post the full set of remaining files from desktop to the Model Library. Although not all remaining model files are required for cloud-compute, the full directory should be posted to the runnable directory to retain a reference and to allow the model to be downloaded for a desktop replication of a cloud event run.</p>
+<p><u>Delivery Location</u>: conformance &gt; hydraulics &gt; [model-unit]</p>
+<h3 id="land-cover">Land Cover<a class="headerlink" href="#land-cover" title="Permanent link">&para;</a></h3>
+<p>No special adjustments to the landcover layer are needed to deliver the model for cloud compute. The land cover layer should remain in its HEC-RAS default location and should be uploaded with the model to the compute directory. Note that the data is not required for cloud-compute, but it is retained to allow for a desktop modeler to work with the model locally in future steps if needed.</p>
+<h3 id="mapping-terrain-delivery">Mapping Terrain Delivery<a class="headerlink" href="#mapping-terrain-delivery" title="Permanent link">&para;</a></h3>
+<p>As described in Section 3.5 of SOP Volume II, multiple versions of the HEC-RAS terrain will be managed by the hydraulic modeler.</p>
+<p>The <em>terrain-production</em> is the full resolution terrain used for modeling, and the final version will be maintained in the following path.</p>
+<p><u>Delivery Location</u>: terrain-modeling &gt; [model-unit]</p>
+<p>The <em>terrain-mapping</em> is the lower resolution exported version of the terrain that will be used for results mapping and processing in cloud-compute. This terrain merges all vector-based terrain modifications and any layers or tiles associated with the terrain used for model development and will be posted to the following path.</p>
+<p><u>Delivery Location</u>: terrain-mapping &gt; [model-unit]</p>
+<h4 id="create-exported-terrain-for-mapping">Create Exported Terrain for Mapping<a class="headerlink" href="#create-exported-terrain-for-mapping" title="Permanent link">&para;</a></h4>
+<p>Merging and resampling of terrain to produce the <em>terrain-mapping</em> version is performed within HEC-RAS Mapper. This software provides adequate tools to perform this process seamlessly and minimizes opportunities for user error by using a consistent system. The merged/resampled output DEM should be generated directly from the HEC-RAS terrain which is associated with the HEC-RAS geometry file used for FFRD modeling. This terrain should include any vector terrain modifications used to alter the terrain, such as: hydro-connectors, culverts, bathymetry estimates, levees, etc.</p>
+<p>To merge and resample a terrain in RAS Mapper, right-click the terrain associated with the FFRD model geometry. Select Export Layer, and Export Raster as shown in Figure 40. The exported raster name should be descriptive and follow naming convention guidance as shown in Job Aid 06, <em>Standard Naming Conventions</em>. It should include the exported cell size as specified in Section 4 of SOP Volume II. The checkbox to <em>Export To Single Raster</em> should be enabled. This is required if the input HEC-RAS terrain .hdf file references several individual raster DEMs which may be of variable cell resolutions. The output cell size should be defined in feet.</p>
+<p>Note that terrain modifications should be incorporated into the exported merged/resampled terrain. By default, if vector terrain modifications are included in the HEC-RAS terrain .hdf file, they will be burned into the exported terrain. If the width of a terrain modification is small (i.e., substantially less than the resolution of the exported raster file), the terrain modifications may be misrepresented in the output terrain surface as smoothing can occur when rasters are resampled. This is generally acceptable for cloud result mapping but is a reason to beware when using resampled terrains for hydraulic modeling.</p>
+<p>Figure 40. HEC-RAS Mapper Export Terrain Dialog</p>
+<p><img src="media/image40.png" style="width:6.5in;height:5.36806in" /></p>
+<p>Figure 41. RAS Mapper Export Terrain Secondary Dialog</p>
+<p><img src="media/image41.png" style="width:6.5in;height:1.63264in" alt="Graphical user interface AI-generated content may be incorrect." /></p>
+<h2 id="breach-data-delivery">Breach Data Delivery<a class="headerlink" href="#breach-data-delivery" title="Permanent link">&para;</a></h2>
+<p>The system response probability tables for each breach location are produced by the dam and levee technical leads as described in separate job aids.</p>
+<p>The model integration lead is also responsible for ensuring that the dam and levee breach data is delivered in the appropriate format and directory location for use in the stochastic simulations via cloud compute. The System Response Template is provided for use in Appendix C of SOP Volume II. A single file is created for all breaches for the entire project. The template includes instructions for populating the data in an Excel table that includes data validation checks to avoid common errors and exporting to a .csv format for direct use in cloud-compute.</p>
+<p>The system response table is delivered to the following location.</p>
+<p><u>Delivery Location</u>: conformance &gt; system-response</p>
+<p>Figure 42. View of System Response Template Format</p>
+<p><img src="media/image42.png" style="width:6.5in;height:4.00139in" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.sections", "navigation.expand", "toc.integrate", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

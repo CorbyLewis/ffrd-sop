@@ -1,0 +1,1747 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Searchable documentation for FFRD Standard Operating Procedures">
+      
+      
+      
+      
+        <link rel="prev" href="../03.%20Meteorologic%20Data%20Processes/">
+      
+      
+        <link rel="next" href="../05.%20Observed%20Gridded%20Data%20Preparation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Job Aid 4—Observed Gage Data Preparation - USACE FFRD SOP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#job-aid-4observed-gage-data-preparation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="USACE FFRD SOP" class="md-header__button md-logo" aria-label="USACE FFRD SOP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            USACE FFRD SOP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Job Aid 4—Observed Gage Data Preparation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="USACE FFRD SOP" class="md-nav__button md-logo" aria-label="USACE FFRD SOP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    USACE FFRD SOP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol1 programatic context
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol1 programatic context
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vol1-programatic-context/programmatic-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programmatic context
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol2 standards and procedures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol2 standards and procedures
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../future-updates-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Future Standard Operating Procedure Updates List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-standards-and-procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical standards and procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B Job Aids
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendix B Job Aids
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01.%20Scoping%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 1—Scoping Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02.%20Data%20Preparation%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 2—Data Preparation Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03.%20Meteorologic%20Data%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 3—Meteorologic Data Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 4—Observed Gage Data Preparation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 4—Observed Gage Data Preparation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-data-to-be-collected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of data to be collected
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vertical-datums" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vertical Datums
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acquisition-of-stream-gage-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acquisition of Stream Gage Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracting-n-day-duration-time-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extracting N-Day Duration Time Series
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-assurancequality-control-of-time-series-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Assurance/Quality Control of Time Series Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#produce-probabilistic-summaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Produce Probabilistic Summaries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Produce Probabilistic Summaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#determine-regulatedunregulated-time-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Determine Regulated/Unregulated Time Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annual-maximum-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annual Maximum Series
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plotting-positions-and-confidence-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plotting Positions and Confidence Limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-for-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format for Delivery
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-of-data-collection-efforts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation of Data Collection Efforts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05.%20Observed%20Gridded%20Data%20Preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 5—Observed Gridded Data Preparation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06.%20Standard%20Naming%20Conventions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 6—Standard Naming Conventions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07.%20Model%20Library%20Use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job AId 7—Model Library Use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08.%20Dam%20Physical%20Representation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 8—Dam Representation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09.%20Levee%20Physical%20Representation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 9—Levee Representation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.%20Dam%20System%20Response%20Development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 10—Dam System Response Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.%20Levee%20System%20Response%20Development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 11—Levee System Response Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.%20Model%20Calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job AId 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.%20Model%20Delivery%20for%20Cloud%20Compute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 13—Model Delivery for Cloud Compute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14.%20Cloud%20Compute%20Workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15.%20Verification%20of%20Cloud%20Compute%20Event%20Results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16.%20Event%20Selection%20for%20Hydraulic%20Modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 16—Event Selection for Hydraulic Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17.%20Consequence%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 17—Consequence Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18.%20Performance%20Metric%20Evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job Aid 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol3 methodology decision rationale
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol3 methodology decision rationale
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vol3-methodology-decision-rationale/methodology-decision-rationale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology decision rationale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol4  cloud compute documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol4  cloud compute documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vol4%20-cloud-compute-documentation/cloud-compute-documenation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Volume Iv—Cloud Compute Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vol5 supporting material
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vol5 supporting material
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vol5-supporting-material/supporting-material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Volume 5 - Supporting Material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="job-aid-4observed-gage-data-preparation">Job Aid 4—Observed Gage Data Preparation<a class="headerlink" href="#job-aid-4observed-gage-data-preparation" title="Permanent link">&para;</a></h1>
+<p>An authoritative set of observed data will be collected during the Data Preparation Phase and shared amongst the modeling team. Subsequent modeling efforts must make use of this authoritative set of observed data in order to avoid using conflicting data. Data that is gathered must also be adjusted prior to use to adhere to vertical datum and time zone requirements (as established in SOP Volume II, Section 3).</p>
+<p>The authoritative dataset will be saved to the central <em>basin-data</em> directory for the project.</p>
+<p>If other data becomes available during later phases (e.g., Calibration, Conformance, etc.), it must be incorporated into the authoritative set of data and shared with the entire modeling team. Any updates to the authoritative dataset that are must be coordinated with the technical lead.</p>
+<p>This document describes the types and sources of data, data processing tools, and typical modifications that are required for use within FFRD applications.</p>
+<h2 id="types-of-data-to-be-collected">Types of data to be collected<a class="headerlink" href="#types-of-data-to-be-collected" title="Permanent link">&para;</a></h2>
+<p>Several types of data should be collected during an FFRD application. This includes:</p>
+<ul>
+<li>
+<p>Flow</p>
+</li>
+<li>
+<p>Stage</p>
+</li>
+<li>
+<p>Stage-Discharge Relationships</p>
+</li>
+<li>
+<p>Stream Gage Field Measurement Dataset</p>
+</li>
+<li>
+<p>High water marks</p>
+</li>
+<li>
+<p>Flood imagery-satellite or airborne</p>
+</li>
+<li>
+<p>Flood Photography-ground photography</p>
+</li>
+</ul>
+<p>Additionally, data should be collected at numerous temporal resolutions including (but not limited to):</p>
+<ul>
+<li>
+<p>Instantaneous (e.g., 5-, 10-,15, 30-, and/or 60-minutes)</p>
+</li>
+<li>
+<p>Sub-daily (e.g., 3-, 6-, and/or 12-hours)</p>
+</li>
+<li>
+<p>Daily</p>
+</li>
+<li>
+<p>Annual Maximums</p>
+</li>
+</ul>
+<h2 id="data-sources">Data Sources<a class="headerlink" href="#data-sources" title="Permanent link">&para;</a></h2>
+<p>The United States Geological Survey (USGS) collects water resources data at over 10,000 active stream gages. This data is disseminated through websites like the <a href="https://waterdata.usgs.gov/nwis/">USGS Water Data for the Nation site</a>. Additional information including historical observations, statistics, instantaneous peak flow/gage height, and field measurements are also available. In most FFRD applications, data collected and distributed by the USGS will constitute the vast majority of pertinent data. However, there are numerous additional sources of water resources data that may be pertinent to FFRD applications including (but not limited to):</p>
+<ul>
+<li>
+<p><a href="https://tidesandcurrents.noaa.gov/">https://tidesandcurrents.noaa.gov/</a></p>
+</li>
+<li>
+<p><a href="https://www.usbr.gov/pn/hydromet/index.html">https://www.usbr.gov/pn/hydromet/index.html</a></p>
+</li>
+<li>
+<p><a href="http://cdec.water.ca.gov/cdecstation2/">http://cdec.water.ca.gov/cdecstation2/</a></p>
+</li>
+<li>
+<p><a href="https://txwaterdatahub.org/dataset/highwater-marks-inventory">https://txwaterdatahub.org/dataset/highwater-marks-inventory</a></p>
+</li>
+<li>
+<p><a href="https://water.usace.army.mil/">https://water.usace.army.mil/</a></p>
+</li>
+<li>
+<p><a href="https://stn.wim.usgs.gov/FEV/">https://stn.wim.usgs.gov/FEV/</a> (high water mark data)</p>
+</li>
+<li>
+<p><a href="https://www.usgs.gov/centers/eros">https://www.usgs.gov/centers/eros</a> (EROS satellite imagery depot)</p>
+</li>
+</ul>
+<p>An excellent summarization of pertinent data sources that are commonly utilized within USACE dam and levee safety studies can be found here: <a href="https://publibrary.sec.usace.army.mil/resource?title=Data%20Sources%20for%20Estimating%20Hydrologic%20Hazards%20for%20Semi-Quantitative%20Risk&amp;documentId=1d66bd71-3a95-4248-f96c-93ad4e3ca81a">Data Sources for Estimating Hydrologic Hazards for Semi-Quantitative Risk Assessments</a>.</p>
+<h2 id="vertical-datums">Vertical Datums<a class="headerlink" href="#vertical-datums" title="Permanent link">&para;</a></h2>
+<p>Commonly, historical data will be reported in a local/project-specific vertical datum or the National Geodetic Vertical Datum of 1929 (NGVD 29). As established in SOP Volume II, Section 3, all stage and/or elevation data used within FFRD applications must be refenced to the North American Vertical Datum of 1988 (NAVD 88). Utilities such as the <a href="https://geodesy.noaa.gov/NCAT/">NGS Coordinate Conversion and Transformation Tool</a> or <a href="https://vdatum.noaa.gov/">NOAA’s VDatum</a> can be utilized to convert stages and/or elevations to NAVD 88.</p>
+<p>Conversions from local project datums will also be clearly defined during the scoping and data preparation phase when they are available.</p>
+<h2 id="acquisition-of-stream-gage-data">Acquisition of Stream Gage Data<a class="headerlink" href="#acquisition-of-stream-gage-data" title="Permanent link">&para;</a></h2>
+<p>For all stream gages within the modeling domain, download and/or ingest the following data using HEC-SSP or HEC-DSSVue:</p>
+<ul>
+<li>
+<p>Instantaneous and/or sub-daily stage and flow data</p>
+</li>
+<li>
+<p>Daily average flow data</p>
+</li>
+<li>
+<p>Annual maximum series of flow</p>
+</li>
+<li>
+<p>Annual maximum series of stage</p>
+</li>
+<li>
+<p>Stream gage field measurement paired dataset (flow and stage)</p>
+</li>
+<li>
+<p>Published stage-discharge relationships</p>
+</li>
+</ul>
+<p>Examples demonstrating these capabilities can be found here: <a href="https://www.hec.usace.army.mil/confluence/sspdocs/ssptutorialsguides/introduction-to-hec-ssp/task-1-create-a-new-hec-ssp-study-import-data-and-visualize-multiple-data-sets">Create a new HEC-SSP Study, Import Data, and Visualize Multiple Data Sets</a>.</p>
+<p>Additionally, several commonly available scripting languages (i.e., R and Python programming languages) have libraries that can be utilized to download this data as well. Example of these libraries include:</p>
+<ul>
+<li>
+<p><a href="https://doi-usgs.github.io/dataRetrieval/">https://doi-usgs.github.io/dataRetrieval/</a></p>
+</li>
+<li>
+<p><a href="https://github.com/DOI-USGS/dataretrieval-python">https://github.com/DOI-USGS/dataretrieval-python</a></p>
+</li>
+</ul>
+<h2 id="extracting-n-day-duration-time-series">Extracting N-Day Duration Time Series<a class="headerlink" href="#extracting-n-day-duration-time-series" title="Permanent link">&para;</a></h2>
+<p>For all stream gages within the modeling domain, calculate n-day duration flow time series (e.g., 1-, 2-, and 3-day durations) using HEC-SSP or HEC-DSSVue. Examples demonstrating these capabilities within HEC-SSP can be found here: <a href="https://www.hec.usace.army.mil/confluence/sspdocs/sspexamples/latest/data-filtering-examples/data-filtering-extracting-an-n-day-duration-time-series">Data Filtering, Extracting an n-Day Duration Time Series</a></p>
+<h2 id="quality-assurancequality-control-of-time-series-data">Quality Assurance/Quality Control of Time Series Data<a class="headerlink" href="#quality-assurancequality-control-of-time-series-data" title="Permanent link">&para;</a></h2>
+<p>Performing quality control on observed data is a critical step in all FFRD applications as the use of incorrect or poor-quality observed data may result in inaccurate results. An excellent summarization of quality assurance (QA)/quality control (QC) processes which must be undertaken during flood hazard studies is contained within the <a href="https://publibrary.sec.usace.army.mil/resource?title=Hydrologic%20Hazard%20Methodology%20for%20Semi-Quantitative%20Risk%20Assessments:%20An%20Inflow%20Volume-Based%20Approach%20to%20Estimating%20Stage-Frequency%20Curves%20for%20Dams&amp;documentId=87363a2a-8dd9-4596-991e-2f9863815c7e">Hydrologic Hazard Methodology for Semi-Quantitative Risk Assessments: An Inflow Volume-Based Approach to Estimating Stage-Frequency Curves for Dams</a>. The following text was summarized from that document.</p>
+<p>In cases where systematic data is obtained for streamflow gages, information on manual measurements of streamflow and gage height, including indirect measurement, can be obtained from the USGS at <a href="http://waterdata.usgs.gov/nwis/measurements">http://waterdata.usgs.gov/nwis/measurements</a>. These measurements can then be used to develop streamflow rating curves, supplement and/or verify the accuracy of the automatically recorded estimates at gages, as well as to compute streamflow based on gage height. These are valuable for flood frequency studies to aid hydrologists in understanding how the largest flood estimates are made (such as indirect measurements), and in estimating uncertainty. See details on streamflow measurement and computation and discharge ratings from the USGS at <a href="https://water.usgs.gov/osw/furnished_records/technical_procedures.html">https://water.usgs.gov/osw/furnished_records/technical_procedures.html</a>. At most large dams, reservoir inflow is indirectly calculated using measurements of reservoir storage (via stage) and outflow (via rating curves or gage measurements). The water management entity that owns/operates the reservoir in question typically utilizes QA/QC steps on the calculated reservoir inflows, so the data may be used as provided after a cursory review is made to check for any obvious errors.</p>
+<p>In addition to potential measurement errors, many datasets have missing data, duplicate values, erroneous data, or other issues that can impact the inflow volume- and stage-frequency assessments. Plotting the flow and stage time series data can assist with identifying any potential errors.</p>
+<p>Chapter II-1, <em>Reservoir and River Stage Exceedance Probabilities</em>, from Best Practices (U.S. Bureau of Reclamation and U.S. Army Corps of Engineers, 2015) provides a useful example data set showing daily average reservoir stages for a dam as presented in Figure 1. The plot reveals several potential data quality issues. The time periods associated with the initial reservoir filling, the dam safety emergency, and the pool restriction for interim risk reduction may not be representative of normal operation. Some of the data also appears to be missing and incorrect based on a visual inspection of the plot. Missing data should be filled and flawed data should be corrected or removed, as deemed appropriate.</p>
+<p>Figure 1. Example of Daily Average Reservoir Stage Data</p>
+<p><img src="media/image1.png" style="width:6.5in;height:4.47917in" alt="Figure of daily average reservoir stage data demonstrating numerous issues that must be rectified prior to use." /></p>
+<h2 id="produce-probabilistic-summaries">Produce Probabilistic Summaries<a class="headerlink" href="#produce-probabilistic-summaries" title="Permanent link">&para;</a></h2>
+<p>Probabilistic summaries of time series data will be used to ascertain the accuracy of the modeling tools and techniques within Calibration, Conformance, and Production Phases.</p>
+<h3 id="determine-regulatedunregulated-time-windows">Determine Regulated/Unregulated Time Windows<a class="headerlink" href="#determine-regulatedunregulated-time-windows" title="Permanent link">&para;</a></h3>
+<p>Prior to extracting any probabilistic results, homogenous time windows for each stream gage must be identified. This must be done in order to avoid violating the independent and identically distributed assumption and align with FFRD modeled outputs. When there is a known source of regulation upstream of a location of interest, but the extent of the impacts is uncertain, further investigation is required. An excellent summarization of steps that can be taken to ascertain the degree of regulation is contained within the technical report titled, <a href="https://iwrlibrary.sec.usace.army.mil/resource?title=Flood%20Hazard%20Methodology%20for%20Semi-Quantitative%20Risk%20Assessment:%20Estimating%20Flood%20Hazard%20for%20Dams%20and%20Levees%20with%20Upstream%20Regulation&amp;documentId=a645ddc5-83d6-4781-9a73-6a6c1e3d128e">Estimating Flood Hazard for Dams and Levees with Upstream Regulation</a>.</p>
+<p>For all locations, consider changes in land use, etc. that may impact the homogeneity of the observed data. Also, for locations that are subject to upstream regulation, consider changes in regulation from upstream storage and diversion projects that may impact the homogeneity of the time series (i.e., not all periods of regulation should be considered significant).</p>
+<h3 id="annual-maximum-series">Annual Maximum Series<a class="headerlink" href="#annual-maximum-series" title="Permanent link">&para;</a></h3>
+<p>Commonly, annual maximum series (AMS) of flow and stage/elevation will be available at most (if not all) USGS gages within the modeling domain. However, these AMS are typically indicative of an instantaneous peak duration (i.e., 1-hour). While the instantaneous peak duration is adequate for use when comparing observed and computed stage/elevation data, additional durations for flow data are needed. Thus, for all stream gages within the modeling domain, flow AMS must be extracted from the observed data for 1-day, 2-days, and 3-days.</p>
+<h3 id="plotting-positions-and-confidence-limits">Plotting Positions and Confidence Limits<a class="headerlink" href="#plotting-positions-and-confidence-limits" title="Permanent link">&para;</a></h3>
+<p>For all stream gages within the modeling domain, 5- and 95-percent confidence limits (i.e., 90 percent confidence interval) must be computed for both flow and stage/elevation for homogenous time periods.</p>
+<p>Confidence intervals for all homogenous flow AMS should be computed using one of the following approaches:</p>
+<ul>
+<li>
+<p>For unregulated locations and time periods, use either multiple Bulletin 17 (i.e., one analysis per duration) and/or a single volume frequency analysis to compute confidence intervals using Bulletin 17C procedures. Examples demonstrating these capabilities can be found here: <a href="https://www.hec.usace.army.mil/confluence/sspdocs/sspexamples/latest/bulletin-17c-examples/bulletin-17c-expected-moments-algorithm-examples">Bulletin 17C | Expected Moments Algorithm Examples</a>.</p>
+</li>
+<li>
+<p>For regulated locations and time periods, use a general frequency analysis to graphically fit an empirical distribution and estimate confidence intervals using order statistics. Examples demonstrating these capabilities can be found here:</p>
+</li>
+<li>
+<p><a href="https://www.hec.usace.army.mil/confluence/sspdocs/ssptutorialsguides/introduction-to-hec-ssp/task-3-create-and-parameterize-a-general-frequency-analysis">Create and Parameterize a General Frequency Analysis</a></p>
+</li>
+<li>
+<p><a href="https://www.hec.usace.army.mil/confluence/sspdocs/sspexamples/latest/general-frequency-analysis-examples/example-9-general-frequency-graphical-analysis">General Frequency – Graphical Analysis</a></p>
+</li>
+</ul>
+<p>Confidence intervals for all homogenous stage/elevation AMS should be estimated by first graphically fitting an empirical distribution and then computing using order statistics. Examples demonstrating these capabilities can be found here:</p>
+<ul>
+<li>
+<p><a href="https://www.hec.usace.army.mil/confluence/sspdocs/ssptutorialsguides/introduction-to-hec-ssp/task-3-create-and-parameterize-a-general-frequency-analysis">Create and Parameterize a General Frequency Analysis</a></p>
+</li>
+<li>
+<p><a href="https://www.hec.usace.army.mil/confluence/sspdocs/sspexamples/latest/general-frequency-analysis-examples/example-7-analyzing-stage-data">Example 7. Analyzing Stage Data</a></p>
+</li>
+</ul>
+<h2 id="format-for-delivery">Format for Delivery<a class="headerlink" href="#format-for-delivery" title="Permanent link">&para;</a></h2>
+<p>Observed data should be provided in HEC DSS format for efficient usage by subsequent modeling applications. Probabilistic results must be provided in both .DSS and Comma-Separated Values (.csv) format for use within the Calibration, Conformance, and Production Phases. The prescribed naming convention laid out within the FFRD SOP must be utilized.</p>
+<p>Authoritative observed data will be posted to the <em>basin-data/observed-data</em> central directory for the project at the end of the Scoping and Data Preparation phase.</p>
+<h2 id="documentation-of-data-collection-efforts">Documentation of Data Collection Efforts<a class="headerlink" href="#documentation-of-data-collection-efforts" title="Permanent link">&para;</a></h2>
+<p>All data collection efforts must be summarized and provided to the modeling team and included in the report for the Scoping and Data Preparation Phase.</p>
+<p>Entries for observed data will be included in the Data Manifest.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.sections", "navigation.expand", "toc.integrate", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
