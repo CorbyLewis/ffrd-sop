@@ -1,0 +1,23 @@
+site_name: USACE FFRD SOP
+site_description: Searchable documentation for FFRD Standard Operating Procedures
+
+theme:
+  name: material
+  palette:
+    scheme: slate          # dark theme
+    primary: indigo        # accent color — change to taste
+    accent: indigo
+  features:
+    - navigation.indexes   # folder index pages act as section landing pages
+    - navigation.sections  # show directory names as expandable sections
+    - navigation.expand    # expand all sections by default
+    - toc.integrate        # merge page TOC into the left nav pane
+    - navigation.top       # back-to-top button
+
+plugins:
+  - search
+  - awesome-pages          # auto-builds nav from your directory hierarchy
+
+markdown_extensions:
+  - toc:
+      permalink: true
