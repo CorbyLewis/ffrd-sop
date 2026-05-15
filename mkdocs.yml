@@ -12,6 +12,7 @@ theme:
     - navigation.sections  # show directory names as expandable sections
     - navigation.collapse     # sections collapse when not active
     - navigation.top       # back-to-top button
+    - toc.follow
 
 plugins:
   - search
@@ -20,3 +21,4 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
+      depth: 7
