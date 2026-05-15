@@ -23,7 +23,7 @@ The main body of this document relies on core models and tools that are publicly
 
 Several templates are provided as appendices to this volume to enforce standardization of documentation in the form of delivered reports, quality reviews, and certain aspects of delivered datasets.
 
-## —Project Workflow and Review
+## Project Workflow and Review
 
 This section defines the required workflow, deliveries and reviews. Resources for national-level technical support for teams executing FFRD projects are also described.
 
@@ -163,7 +163,7 @@ A comprehensive organizational and governance structure for the FFRD program ser
 
 Basin advisors from USACE with experience developing early FFRD pilot projects will be available to support basin production teams. This role is expected to be critical for early basin production activities and may diminish over time as collective experience with SOP procedures is gained.
 
-## —Standards
+## Standards
 
 #### Modeling System and Plugins
 
@@ -419,7 +419,7 @@ The FFRD program will use standardized technical report templates for each indiv
 
 The FFRD program will use standardized templates for management documents such as the PWPs.
 
-## —Scoping and Data Preparation
+## Scoping and Data Preparation
 
 Watershed studies for FFRD require a large team working in a coordinated manner. The scoping and data preparation phase is a significant effort executed by a relatively small team to define the specifics of the project scope and ensure an authoritative common input dataset is in place to be used by the entire team throughout the subsequent phases. In addition to data collection and coordination efforts, this phase includes modeling and analysis tasks to ensure that the scope of individual model efforts (to be initiated by a larger team in the subsequent calibration phase) are well defined.
 
