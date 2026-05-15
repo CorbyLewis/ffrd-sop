@@ -11,7 +11,6 @@ theme:
     - navigation.indexes   # folder index pages act as section landing pages
     - navigation.sections  # show directory names as expandable sections
     - navigation.collapse     # sections collapse when not active
-    - toc.integrate        # merge page TOC into the left nav pane
     - navigation.top       # back-to-top button
 
 plugins:
