@@ -21,4 +21,3 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
-      depth: 7
