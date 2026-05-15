@@ -191,28 +191,9 @@ The procedures detailed throughout this SOP follow directly from the previous US
 
 [The selected methodology described in this this SOP can be characterized as follows:](#_Ref214621915)
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+[Utilize sequential meteorologic, hydrology, reservoir simulation, hydraulics, and consequence models by linking inputs to outputs.Perform individual model calibration and validation, utilizing multiple observed historic events.Utilize SST method to generate synthetic storm events.Perform hydrologic modeling to provide base flow and gridded excess precipitation outputs.Perform reservoir simulation modeling to provide outflows from key flood control dams.Account for dam and levee breaches by leveraging available system response probability curves for existing risk assessment studies or other baseline estimates.Perform hydraulic modeling with fully 2D coverage to provide stage, flow, and velocity information at all locations throughout the study basin.Variable resolution of hydraulic modeling outputs based on clearly defined basin characteristics. Higher resolution provided along key streams and urban areas.Utilize consequence modeling that leverages actuarial books, user-provided inventories, or nationally available structure inventories.Apply a stochastic approach by modeling multiple synthetic events per year of a long-term, quasi-continuous simulation.Perform multiple realizations of quasi-continuous simulations to provide quantified uncertainty around all flood risk results.Produce complete picture of flood risk with uncertainty over all probabilities (from 1/10 to 1/2,000 AEP) and over all flood risk metrics.Centralize storage and delivery of all inputs, models, and output data in through the Model Library system, which utilizes cloud storage and role-based access control for all users.Ensure standardized use of geographic projection, vertical datum, time zones, naming conventions, and other important parametersStandardize workflow including well-defined project development phases, each with clear review process and clear deliverables for each step within the phases.Provide multiple job aids, checklists, and templates to assist in production of FFRD products for a basin.Develop tools with standard software development practices on open-source libraries.Develop tools that are extensible through a plugin-based architecture, which allows for future development of tools and procedures around alternative models or added capabilities as models evolve and mature.](#_Ref214621915)
 
-> [Utilize sequential meteorologic, hydrology, reservoir simulation, hydraulics, and consequence models by linking inputs to outputs.Perform individual model calibration and validation, utilizing multiple observed historic events.Utilize SST method to generate synthetic storm events.Perform hydrologic modeling to provide base flow and gridded excess precipitation outputs.Perform reservoir simulation modeling to provide outflows from key flood control dams.Account for dam and levee breaches by leveraging available system response probability curves for existing risk assessment studies or other baseline estimates.Perform hydraulic modeling with fully 2D coverage to provide stage, flow, and velocity information at all locations throughout the study basin.Variable resolution of hydraulic modeling outputs based on clearly defined basin characteristics. Higher resolution provided along key streams and urban areas.Utilize consequence modeling that leverages actuarial books, user-provided inventories, or nationally available structure inventories.Apply a stochastic approach by modeling multiple synthetic events per year of a long-term, quasi-continuous simulation.Perform multiple realizations of quasi-continuous simulations to provide quantified uncertainty around all flood risk results.Produce complete picture of flood risk with uncertainty over all probabilities (from 1/10 to 1/2,000 AEP) and over all flood risk metrics.Centralize storage and delivery of all inputs, models, and output data in through the Model Library system, which utilizes cloud storage and role-based access control for all users.Ensure standardized use of geographic projection, vertical datum, time zones, naming conventions, and other important parametersStandardize workflow including well-defined project development phases, each with clear review process and clear deliverables for each step within the phases.Provide multiple job aids, checklists, and templates to assist in production of FFRD products for a basin.Develop tools with standard software development practices on open-source libraries.Develop tools that are extensible through a plugin-based architecture, which allows for future development of tools and procedures around alternative models or added capabilities as models evolve and mature.](#_Ref214621915)
-
-# [<span id="_Toc217381916" class="anchor"></span>—Program Delivery](#_Ref214621915)
+# [<span id="_Toc217381916" class="anchor"></span>Program Delivery](#_Ref214621915)
 
 [Delivery of consistent modern flood risk data for the entire nation according to the Standard Operating Procedures requires clear protocols for programmatic decision making and technical oversight. It is also critical that project teams developing individual basin projects have access to training and technical support. This section establishes the programmatic level roles and responsibilities.](#_Ref214621915)
 
